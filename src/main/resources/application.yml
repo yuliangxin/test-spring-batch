@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    read:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.213.150:3306/batchtest?useSSL=false
+      username: root
+      password: root
+    write:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.213.150:3306/writedb?useSSL=false
+      username: root
+      password: root
+  batch:
+    initialize-schema: always
